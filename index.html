@@ -14,58 +14,12 @@
 <body>
 
   <!-- Audio Atmosphere Control -->
-  <button id="audio-toggle" class="audio-control" title="Toggle Storm Ambience">🔊</button>
-  <audio id="storm-audio" loop>
-    <source src="https://www.soundjay.com/nature/sounds/rain-01.mp3" type="audio/mpeg">
-  </audio>
-
-  <!-- Flash Layer for Lightning FX -->
-  <div id="lightning-overlay" class="lightning-flash"></div>
-
-  <!-- Hero Section -->
-  <section class="hero-container">
-    <div class="fog-wrapper">
-      <div class="fog-layer"></div>
-    </div>
-
-    <h1 class="hero-title">DREADED SCALES OF THE ABYSS</h1>
-    <p class="hero-subtitle">⚔️ RULE THE SEAS • COMMAND THE ABYSS 🏴</p>
-
-    <div class="btn-group">
-      <a href="#recruitment" class="dsoa-btn">⚔️ Join the Crew</a>
-      <a href="#fleet" class="dsoa-btn">🏴 Meet the Fleet</a>
-      <a href="#about" class="dsoa-btn">📜 Crew History</a>
-    </div>
-  </section>
-
-  <!-- About DSOA -->
-  <section id="about" class="section-container">
-    <h2 class="section-title">☠️ ABOUT DSOA</h2>
-    <p style="text-align: center; line-height: 1.8; font-size: 1.2rem; color: var(--color-bone);">
-      Forged in the darkest depth of the ocean, the Dreaded Scales of the Abyss stand as an unbroken brotherhood of fierce captains, ruthless PvP combatants, and master treasure hunters. Guided by our Code of Honor, we command respect across every sea we sail.
-    </p>
-  </section>
-
-  <!-- Fleet Command Section -->
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dreaded Scales of the Abyss | Official Portal</title>
+  <button id="audio-toggle" class="audio-control" title="Toggle Background Music">🎵 🔊</button>
   
-  <!-- CSS & Fonts -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <!-- Audio Atmosphere Control -->
-  <button id="audio-toggle" class="audio-control" title="Toggle Storm Ambience">🔊</button>
   <audio id="storm-audio" loop>
-    <source src="https://www.soundjay.com/nature/sounds/rain-01.mp3" type="audio/mpeg">
+    <!-- YOUR CUSTOM DSOA ANTHEM -->
+    <source src="https://v3.fastupload.io/file/2004245" type="audio/mpeg">
+    Your browser does not support the audio element.
   </audio>
 
   <!-- Flash Layer for Lightning FX -->
@@ -106,11 +60,15 @@
         <img src="https://via.placeholder.com/150" alt="Avatar" class="crew-avatar">
         <div class="crew-rank">👑 King / Founder</div>
         <h3 class="crew-name">Jack Sparrow</h3>
+        <p style="font-size: 0.95rem; color: var(--color-ghost-green); margin: 0.3rem 0;">Discord: toothless4558</p>
+        <a href="https://discord.com/users/toothless4558" target="_blank" class="dsoa-btn" style="padding: 0.4rem 0.8rem; font-size: 0.8rem; background: #5865F2; border-color: #5865F2; display: inline-block; margin-top: 0.5rem;">💬 Contact King</a>
       </div>
       <div class="crew-card">
         <img src="https://via.placeholder.com/150" alt="Avatar" class="crew-avatar">
         <div class="crew-rank">☠️ Second in Command</div>
         <h3 class="crew-name">WazhushkOgichida</h3>
+        <p style="font-size: 0.95rem; color: var(--color-ghost-green); margin: 0.3rem 0;">Discord: wazhushkogichida</p>
+        <a href="https://discord.com/users/wazhushkogichida" target="_blank" class="dsoa-btn" style="padding: 0.4rem 0.8rem; font-size: 0.8rem; background: #5865F2; border-color: #5865F2; display: inline-block; margin-top: 0.5rem;">💬 Contact 2nd Command</a>
       </div>
     </div>
 
@@ -255,10 +213,18 @@
     </form>
   </section>
 
+  <!-- Scripts -->
   <script src="assets/js/main.js"></script>
+  <script>
+    // Auto-play music on first click anywhere (bypasses browser autoplay restrictions)
+    document.addEventListener('click', function startAudio() {
+      const audio = document.getElementById('storm-audio');
+      if (audio && audio.paused) {
+        audio.play().catch(e => console.log('Audio autoplay prevented'));
+      }
+      document.removeEventListener('click', startAudio);
+    });
+  </script>
 </body>
 </html>
 
- 
-      
-      
