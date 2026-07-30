@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dreaded Scales of the Abyss | Official Portal</title>
+  
+  <!-- CSS & Fonts -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Audio Atmosphere Control -->
+  <button id="audio-toggle" class="audio-control" title="Toggle Storm Ambience">🔊</button>
+  <audio id="storm-audio" loop>
+    <source src="https://www.soundjay.com/nature/sounds/rain-01.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Flash Layer for Lightning FX -->
+  <div id="lightning-overlay" class="lightning-flash"></div>
+
+  <!-- Hero Section -->
+  <section class="hero-container">
+    <div class="fog-wrapper">
+      <div class="fog-layer"></div>
+    </div>
+
+    <h1 class="hero-title">DREADED SCALES OF THE ABYSS</h1>
+    <p class="hero-subtitle">⚔️ RULE THE SEAS • COMMAND THE ABYSS 🏴</p>
+
+    <div class="btn-group">
+      <a href="#recruitment" class="dsoa-btn">⚔️ Join the Crew</a>
+      <a href="#fleet" class="dsoa-btn">🏴 Meet the Fleet</a>
+      <a href="#about" class="dsoa-btn">📜 Crew History</a>
+    </div>
+  </section>
+
+  <!-- About DSOA -->
+  <section id="about" class="section-container">
+    <h2 class="section-title">☠️ ABOUT DSOA</h2>
+    <p style="text-align: center; line-height: 1.8; font-size: 1.2rem; color: var(--color-bone);">
+      Forged in the darkest depth of the ocean, the Dreaded Scales of the Abyss stand as an unbroken brotherhood of fierce captains, ruthless PvP combatants, and master treasure hunters. Guided by our Code of Honor, we command respect across every sea we sail.
+    </p>
+  </section>
+
+  <!-- Fleet Command Section -->
+  <section id="fleet" class="section-container">
+    <h2 class="section-title">⚓ FLEET COMMAND</h2>
+    <div class="card-grid">
+      
+      <!-- Founder -->
+      <div class="crew-card">
+        <img src="https://via.placeholder.com/150" alt="Founder Avatar" class="crew-avatar">
+        <div class="crew-rank">👑 Founder</div>
+        <h3 class="crew-name">Captain Abyss</h3>
+        <p style="font-size: 0.9rem; color: #a0a0a0;">Discord: CaptainAbyss#0001</p>
+        <p style="margin-top: 0.8rem; font-size: 0.95rem;">Master of the High Seas and founder of the DSOA Fleet.</p>
+      </div>
+
+      <!-- Co-Owner -->
+      <div class="crew-card">
+        <img src="https://via.placeholder.com/150" alt="Co-Owner Avatar" class="crew-avatar">
+        <div class="crew-rank">☠️ Co-Owner</div>
+        <h3 class="crew-name">Dread Kraken</h3>
+        <p style="font-size: 0.9rem; color: #a0a0a0;">Discord: DreadKraken#0002</p>
+        <p style="margin-top: 0.8rem; font-size: 0.95rem;">First Mate and Strategist of all fleet engagements.</p>
+      </div>
+
+      <!-- Admiral -->
+      <div class="crew-card">
+        <img src="https://via.placeholder.com/150" alt="Admiral Avatar" class="crew-avatar">
+        <div class="crew-rank">⚔️ Admiral</div>
+        <h3 class="crew-name">Vane Blackwood</h3>
+        <p style="font-size: 0.9rem; color: #a0a0a0;">Discord: Vane#0003</p>
+        <p style="margin-top: 0.8rem; font-size: 0.95rem;">Commander of PvP Armada operations.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Recruitment Application -->
+  <section id="recruitment" class="section-container">
+    <h2 class="section-title">📜 RECRUITMENT APPLICATION</h2>
+    <form style="display: flex; flex-direction: column; gap: 1.2rem; max-width: 600px; margin: 0 auto;">
+      <input type="text" placeholder="Discord Username" required style="padding: 0.8rem; background: var(--bg-card); border: 1px solid var(--color-gold); color: white;">
+      <input type="number" placeholder="Age" required style="padding: 0.8rem; background: var(--bg-card); border: 1px solid var(--color-gold); color: white;">
+      <input type="text" placeholder="Time Zone & Platform (PC/Xbox/PS5)" required style="padding: 0.8rem; background: var(--bg-card); border: 1px solid var(--color-gold); color: white;">
+      <textarea rows="5" placeholder="Why do you wish to join the Dreaded Scales of the Abyss?" required style="padding: 0.8rem; background: var(--bg-card); border: 1px solid var(--color-gold); color: white;"></textarea>
+      <button type="submit" class="dsoa-btn" style="width: 100%;">Submit Application</button>
+    </form>
+  </section>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
